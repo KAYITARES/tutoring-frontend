@@ -24,6 +24,10 @@ const SingleClass = ({ data }) => {
           <h4 className="" style={{ fontSize: "16px", fontWeight: "bold" }}>
             Email: <span style={{ color: "blue" }}>{data.user.email}</span>
           </h4>
+          <h4 className="" style={{ fontSize: "16px", fontWeight: "bold" }}>
+            Course Name:{" "}
+            <span style={{ color: "blue" }}>{data.course.courseName}</span>
+          </h4>
         </div>
       </div>
     </>
