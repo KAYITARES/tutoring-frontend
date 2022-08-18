@@ -1,0 +1,20 @@
+[
+  {
+    "user": {
+      "firstName": "Kayitare",
+      "lastName": "Cynthia",
+      "email": "email",
+      "role": "role",
+      "phone": "phone"
+    },
+    "class": {
+      "name": "1"
+    },
+    "courseName": "JS",
+    "courseTitle": "hus",
+    "duration": "1 hours",
+    "content": "bcdiuociw cuiwciuwbciuw wui uiw iuw wiub  iuwbiuwbvuidwb",
+    "coursestatus": "Enable",
+    "createdBy": "Cynthia"
+  }
+]

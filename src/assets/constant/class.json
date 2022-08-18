@@ -1,0 +1,15 @@
+[
+  {
+    "className": "1",
+    "user": {
+      "firstName": "Kayitare",
+      "lastName": "Cynthia",
+      "email": "kacynthian@gmail.com",
+      "role": "admin",
+      "phone": "+250785627690"
+    },
+    "course": {
+      "courseName": "js"
+    }
+  }
+]

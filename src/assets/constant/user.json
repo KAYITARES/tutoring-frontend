@@ -1,0 +1,29 @@
+[
+  {
+    "firstName": "KAYITARE",
+    "lastName": "Cynthia",
+    "phone": "+250785627690",
+    "address": "kigali",
+    "gender": "female",
+    "role": "admin",
+    "email": "kacynthian@gmail.com"
+  },
+  {
+    "firstName": "MUTUYIMANA",
+    "lastName": "ALICE",
+    "phone": "+250785627690",
+    "address": "kigali",
+    "gender": "female",
+    "role": "admin",
+    "email": "kacynthian@gmail.com"
+  },
+  {
+    "firstName": "UWASE",
+    "lastName": "LILIANE",
+    "phone": "+250785627690",
+    "address": "kigali",
+    "gender": "female",
+    "role": "admin",
+    "email": "kacynthian@gmail.com"
+  }
+]

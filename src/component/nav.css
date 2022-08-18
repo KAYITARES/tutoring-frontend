@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 6rem;
+  width: 100%;
+  /* background: red; */
+  box-shadow: 3px 2px rgba(48, 100, 134, 0.48);
+}
+.logo-img {
+  width: 100px;
+  /* object-fit: cover; */
+}
+.logo {
+  background: green;
+}
+.link-container {
+  /* background: red; */
+}
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 3rem;
+}
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: rgba(0, 0, 255, 0.693);
+  transition: all 0.3s;
+}
+.nav-link:hover,
+.nav-link:active {
+  color: blue;
+}
+.login-form {
+  max-width: 300px;
+}
+.login-form-forgot {
+  float: right;
+}
+.ant-col-rtl .login-form-forgot {
+  float: left;
+}
+.login-form-button {
+  width: 100%;
+}
+.ant-form-item-label label {
+  /* font-size: 16px; */
+  font-weight: bold;
+}
