@@ -129,11 +129,11 @@ const Nav = () => {
               Class
             </a>
           </li>
-          <li>
+          {/* <li>
             <a className="nav-link" href="#">
               Courses
             </a>
-          </li>
+          </li> */}
           <li>
             <a className="nav-link" href="#" onClick={() => setVisible(true)}>
               Sign-In

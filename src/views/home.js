@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import "./home.css";
 import Nav from "../component/nav";
+import Class from "./class";
 // import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
           </h3>
         </div>
       </div>
+      <Class />
     </>
   );
 };
