@@ -9,27 +9,48 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
+.class-container {
+  padding: 1rem 11rem 4rem;
+  background: #eee;
+}
 .home {
   background-image: url("../assets/home-img.webp");
   width: 100%;
-  height: 70vh;
+  height: 74vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  position: relative;
 }
 .text-container {
-  background: rgba(0, 0, 0, 0.582);
   width: 100%;
-  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  top: 50%;
 }
 .welcome-text {
   text-align: center;
-
-  font-size: 3.2rem;
+  background: rgba(0, 0, 0, 0.582);
+  clip-path: polygon(5% 0, 100% 0, 94% 100%, 0% 100%);
+  /* text-shadow: 1px 1px 3px rgb(122, 120, 120); */
+  padding: 4px 80px;
+  font-size: 2.4rem;
   letter-spacing: 1.5px;
+  color: #ddd;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .welcome-text {
+    font-size: 1.6rem;
+    padding: 4px 40px;
+  }
+}
+.welcome-text span {
   color: transparent;
   background-image: linear-gradient(to right, blue, white, yellow);
   -webkit-background-clip: text;
-}
-.welcome-text span {
 }

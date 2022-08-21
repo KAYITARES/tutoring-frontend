@@ -19,6 +19,7 @@ import {
 } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import SignUp from "../component/Signup";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const navigate = useNavigate();
@@ -27,8 +28,17 @@ const Nav = () => {
   };
   const [visible, setVisible] = useState(false);
   const [visibleSignUp, setVisibleSignUp] = useState(false);
+  const [bgcolor, setBgColor] = useState(false);
+  const changeBgColor = () => {
+    if (window.scrollY >= 5) {
+      setBgColor(true);
+    } else {
+      setBgColor(false);
+    }
+  };
+  window.addEventListener("scroll", changeBgColor);
   return (
-    <nav>
+    <nav className={bgcolor ? "nav nav-bg" : "nav"}>
       <Modal
         visible={visible}
         width="25%"
@@ -120,14 +130,28 @@ const Nav = () => {
       <div className="link-container">
         <ul className="nav-links">
           <li>
-            <a className="nav-link" href="/">
+            <Link
+              to="/"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="nav-link"
+            >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="nav-link" href="#">
+            <Link
+              to="/class"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="nav-link"
+            >
               Class
-            </a>
+            </Link>
           </li>
           {/* <li>
             <a className="nav-link" href="#">
@@ -135,9 +159,17 @@ const Nav = () => {
             </a>
           </li> */}
           <li>
-            <a className="nav-link" href="#" onClick={() => setVisible(true)}>
+            <Link
+              to="#"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="nav-link"
+              onClick={() => setVisible(true)}
+            >
               Sign-In
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
