@@ -29,6 +29,14 @@ const Nav = () => {
   const [visible, setVisible] = useState(false);
   const [visibleSignUp, setVisibleSignUp] = useState(false);
   const [bgcolor, setBgColor] = useState(false);
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY >= 5) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
   const changeBgColor = () => {
     if (window.scrollY >= 5) {
       setBgColor(true);
@@ -37,6 +45,7 @@ const Nav = () => {
     }
   };
   window.addEventListener("scroll", changeBgColor);
+  window.addEventListener("scroll", changeColor);
   return (
     <nav className={bgcolor ? "nav nav-bg" : "nav"}>
       <Modal
@@ -130,28 +139,29 @@ const Nav = () => {
       <div className="link-container">
         <ul className="nav-links">
           <li>
-            <Link
-              to="/"
+            <a
+              href="/"
               spy={true}
               smooth={true}
               offset={50}
               duration={500}
-              className="nav-link"
+              // className="nav-link"
+              className={color ? "a" : "nav-link"}
             >
               Home
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/class"
+            <a
+              href="/class"
               spy={true}
               smooth={true}
               offset={50}
               duration={500}
-              className="nav-link"
+              className={color ? "a" : "nav-link"}
             >
               Class
-            </Link>
+            </a>
           </li>
           {/* <li>
             <a className="nav-link" href="#">
@@ -159,17 +169,17 @@ const Nav = () => {
             </a>
           </li> */}
           <li>
-            <Link
-              to="#"
+            <a
+              href="#"
               spy={true}
               smooth={true}
               offset={-100}
               duration={500}
-              className="nav-link"
+              className={color ? "a" : "nav-link"}
               onClick={() => setVisible(true)}
             >
               Sign-In
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

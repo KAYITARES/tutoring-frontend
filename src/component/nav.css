@@ -27,14 +27,14 @@ body {
   /* background: white; */
   /* background: red; */
 }
-li a {
-  /* color: #ffffff; */
+a {
+  color: #1890ff;
   font-size: 18px;
 }
 
 .nav-bg {
   background: white;
-  /* color: #1890ff; */
+
   color: yellow;
   box-shadow: 0px 1px 3px rgba(63, 63, 63, 0.48);
 }
@@ -80,12 +80,12 @@ li a {
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 500;
-  color: rgba(0, 0, 255, 0.693);
+  color: rgb(174, 174, 12);
   transition: all 0.3s;
 }
 .nav-link:hover,
 .nav-link:active {
-  color: blue;
+  color: rgb(228, 228, 17);
 }
 .login-form {
   max-width: 300px;
