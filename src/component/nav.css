@@ -29,7 +29,7 @@ body {
 }
 a {
   color: #1890ff;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 .nav-bg {
@@ -78,14 +78,15 @@ a {
 .nav-link:link,
 .nav-link:visited {
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  color: rgb(174, 174, 12);
+  color: rgb(228, 228, 17);
+
   transition: all 0.3s;
 }
 .nav-link:hover,
 .nav-link:active {
-  color: rgb(228, 228, 17);
+  color: rgb(174, 174, 12);
 }
 .login-form {
   max-width: 300px;
