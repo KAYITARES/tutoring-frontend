@@ -27,7 +27,7 @@ body {
   /* background: white; */
   /* background: red; */
 }
-a {
+li a {
   color: #1890ff;
   /* font-size: 18px; */
 }
@@ -104,3 +104,18 @@ a {
   /* font-size: 16px; */
   font-weight: bold;
 }
+/* .ant-menu-item a {
+  color: white !important;
+}
+.antd-menu-item a:hover {
+  color: blue !important;
+}
+.ant-menu-inline.ant-menu-root .ant-menu-item > *,
+.ant-menu-inline.ant-menu-root .ant-menu-submenu-title > * {
+  flex: none;
+  color: white !important;
+}
+.ant-menu-inline.ant-menu-root .ant-menu-item:hover > *,
+.ant-menu-inline.ant-menu-root .ant-menu-submenu-title:hover > * {
+  color: blue !important;
+} */

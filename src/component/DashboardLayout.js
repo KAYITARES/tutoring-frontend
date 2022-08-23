@@ -23,7 +23,7 @@ const DashLayout = ({ children }) => {
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="logo" />
-        <Menu theme="light" mode="inline" defaultSelectedKeys={["1"]}>
+        <Menu theme="light" mode="inline">
           <Menu.Item key="1" icon={<UserOutlined />}>
             <Link to="/admin/allUsers">List of All Users</Link>
           </Menu.Item>

@@ -146,7 +146,7 @@ const Nav = () => {
               offset={50}
               duration={500}
               // className="nav-link"
-              className={color ? "a" : "nav-link"}
+              className={color ? "li a" : "nav-link"}
             >
               Home
             </a>
@@ -158,7 +158,7 @@ const Nav = () => {
               smooth={true}
               offset={50}
               duration={500}
-              className={color ? "a" : "nav-link"}
+              className={color ? "li a" : "nav-link"}
             >
               Class
             </a>
@@ -175,7 +175,7 @@ const Nav = () => {
               smooth={true}
               offset={-100}
               duration={500}
-              className={color ? "a" : "nav-link"}
+              className={color ? "li a" : "nav-link"}
               onClick={() => setVisible(true)}
             >
               Sign-In

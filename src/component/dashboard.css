@@ -1,9 +1,8 @@
 .logo {
   height: 32px;
-  margin: 16px;
-  background-image: url("https://cdn-icons-png.flaticon.com/512/2641/2641422.png");
+  margin: 28px;
+  background: white;
 }
-
 .trigger {
   padding: 0 24px;
   font-size: 18px;
@@ -23,5 +22,8 @@
   background: #141414;
 }
 .ant-layout-sider {
-  background: rgba(173, 171, 171, 0.3) !important;
+  background: #ccc3c3 !important;
+}
+.ant-menu {
+  background: rgba(255, 255, 255) !important;
 }
