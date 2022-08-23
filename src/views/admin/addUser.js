@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DashboardLayout from "../../component/DashboardLayout";
+import "./admin.css";
 import {
   Form,
   Input,
@@ -43,26 +44,22 @@ const NewUser = () => {
             <Radio value="male"> Male </Radio>
           </Radio.Group>
         </Form.Item>
-        <Space>
-          <Form.Item
-            name="phone"
-            label="Phone Number"
-            rules={[{ required: true }]}
-            type="tel"
-          >
-            <Input placeholder="Phone Number" />
-          </Form.Item>
-          <Form.Item name="email" label="Email" rules={[{ required: true }]}>
-            <Input placeholder="Email" type="email" />
-          </Form.Item>
-          <Form.Item
-            name="address"
-            label="Address"
-            rules={[{ required: true }]}
-          >
-            <Input placeholder="Address" />
-          </Form.Item>
-        </Space>
+
+        <Form.Item
+          name="phone"
+          label="Phone Number"
+          rules={[{ required: true }]}
+          type="tel"
+        >
+          <Input placeholder="Phone Number" />
+        </Form.Item>
+        <Form.Item name="email" label="Email" rules={[{ required: true }]}>
+          <Input placeholder="Email" type="email" />
+        </Form.Item>
+        <Form.Item name="address" label="Address" rules={[{ required: true }]}>
+          <Input placeholder="Address" />
+        </Form.Item>
+
         <Form.Item label="Role" name="role">
           <Radio.Group>
             <Radio value="admin">Admin </Radio>

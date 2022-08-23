@@ -1,9 +1,6 @@
 .logo {
   height: 32px;
-  object-fit: fill !important;
   margin: 16px;
-  /* border-radius: 50%; */
-
   background-image: url("https://cdn-icons-png.flaticon.com/512/2641/2641422.png");
 }
 
@@ -25,11 +22,6 @@
 [data-theme="dark"] .site-layout .site-layout-background {
   background: #141414;
 }
-
 .ant-layout-sider {
-  position: relative;
-  min-width: 0;
-  background: white !important;
-  width: 800px !important;
-  transition: all 0.2s;
+  background: rgba(173, 171, 171, 0.3) !important;
 }
