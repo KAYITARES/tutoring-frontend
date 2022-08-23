@@ -58,7 +58,16 @@ const Home = () => {
   ];
   return (
     <DashboardLayout>
-      <Table columns={columns} dataSource={classes} />
+      <Table
+        columns={columns}
+        dataSource={classes}
+        pagination={{
+          defaultPageSize: 5,
+          showSizeChanger: true,
+          // pageSizeOptions: ["5", "10", "15"],
+        }}
+        size="small"
+      />
       <Drawer
         width={500}
         placement="left"

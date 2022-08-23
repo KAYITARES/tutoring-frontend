@@ -34,11 +34,14 @@ const DashLayout = ({ children }) => {
             <Link to="/admin/classes">List of All Classes</Link>
           </Menu.Item>
           <Menu.Item key="4" icon={<VideoCameraOutlined />}>
-            <Link to="/admin/courses">List of All Courses</Link>
+            <Link to="/admin/classes/add">Add a Class</Link>
           </Menu.Item>
 
+          <Menu.Item key="5" icon={<VideoCameraOutlined />}>
+            <Link to="/admin/courses">List of All Courses</Link>
+          </Menu.Item>
           <Menu.Item
-            key="5"
+            key="6"
             icon={<UploadOutlined />}
             onClick={() => localStorage.removeItem("userLogedIn")}
           >

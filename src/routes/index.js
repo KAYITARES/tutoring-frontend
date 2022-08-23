@@ -7,6 +7,7 @@ import Class from "../views/admin/class";
 import Course from "../views/admin/course";
 import Courses from "../views/course";
 import Classes from "../views/class";
+import AddClass from "../views/admin/addClass"
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <Route exact path="/admin/allUsers" element={<Users />}></Route>
       <Route exact path="/admin/addUser" element={<User />}></Route>
       <Route exact path="/admin/classes" element={<Class />}></Route>
+      <Route exact path="/admin/classes/add" element={<AddClass />}></Route>
       <Route exact path="/admin/courses" element={<Course />}></Route>
     </Routes>
   );
