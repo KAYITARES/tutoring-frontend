@@ -14,24 +14,32 @@ const SingleUser = ({ data }) => {
               alignItems: "center",
               justifyContent: "space-between",
               background: "#eee",
+              padding: "5px",
               gap: "0",
-              marginBottom: "0",
             }}
           >
-            <h2 style={{ fontWeight: "bold", background: "red" }}>Role</h2>
+            <h2
+              style={{
+                fontWeight: "bold",
+                // background: "red",
+                marginBottom: "0",
+              }}
+            >
+              Role
+            </h2>
             <h5
               style={{
                 fontWeight: "bold",
                 textTransform: "capitalize",
                 color: "blue",
-                background: "green",
+                // background: "green",
 
-                // padding: "0 60px",
+                padding: "0 0 0 60px",
                 // display: "flex",
                 // alignItems: "flex-start",
                 // flexDirection: "column",
                 // justifyContent: "center",
-                fontSize: "16px",
+                fontSize: "14px",
               }}
             >
               {data.role}
