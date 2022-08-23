@@ -63,7 +63,7 @@ const Home = () => {
       />
       <Drawer
         width={500}
-        placement="center"
+        placement="left"
         visible={show}
         onClose={() => {
           setShow(false);
