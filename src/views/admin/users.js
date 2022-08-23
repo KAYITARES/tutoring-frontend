@@ -9,26 +9,26 @@ const Home = () => {
   const [userSelected, setUserSelected] = useState({});
   const columns = [
     {
-      title: "FirstName",
+      title: "First Name",
       dataIndex: "firstName",
       key: "firstName",
       render: (text) => <a>{text}</a>,
     },
     {
-      title: "LastName",
+      title: "Last Name",
       dataIndex: "lastName",
       key: "lastName",
+    },
+    ,
+    {
+      title: "Role",
+      dataIndex: "role",
+      key: "role",
     },
     {
       title: "Email",
       dataIndex: "email",
       key: "email",
-    },
-    ,
-    {
-      title: "Phone",
-      dataIndex: "phone",
-      key: "phone",
     },
 
     {
@@ -51,7 +51,16 @@ const Home = () => {
   ];
   return (
     <DashboardLayout>
-      <Table columns={columns} dataSource={users} />
+      <Table
+        columns={columns}
+        dataSource={users}
+        pagination={{
+          defaultPageSize: 5,
+          showSizeChanger: true,
+          // pageSizeOptions: ["5", "10", "15"],
+        }}
+        size="small"
+      />
       <Drawer
         width={500}
         placement="center"

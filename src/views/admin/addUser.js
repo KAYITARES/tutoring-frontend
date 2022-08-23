@@ -18,30 +18,24 @@ const NewUser = () => {
   };
   return (
     <DashboardLayout>
-      <Form onFinish={onFinish}>
-        <Space>
-          <Form.Item
-            name="firstName"
-            label="First Name"
-            rules={[{ required: true }]}
-          >
-            <Input placeholder="FirstName" />
-          </Form.Item>
-          <Form.Item
-            name="lastName"
-            label="Last Name"
-            rules={[{ required: true }]}
-          >
-            <Input placeholder="Last Name" />
-          </Form.Item>
-          <Form.Item
-            name="phone"
-            label="Phone Number"
-            rules={[{ required: true }]}
-          >
-            <Input placeholder="Phone Number" />
-          </Form.Item>
-        </Space>
+      <Form
+        onFinish={onFinish}
+        style={{ background: "white", padding: "30px" }}
+      >
+        <Form.Item
+          name="firstName"
+          label="First Name"
+          rules={[{ required: true }]}
+        >
+          <Input placeholder="FirstName" />
+        </Form.Item>
+        <Form.Item
+          name="lastName"
+          label="Last Name"
+          rules={[{ required: true }]}
+        >
+          <Input placeholder="Last Name" />
+        </Form.Item>
 
         <Form.Item label="Gender" name="gender">
           <Radio.Group>
@@ -50,6 +44,14 @@ const NewUser = () => {
           </Radio.Group>
         </Form.Item>
         <Space>
+          <Form.Item
+            name="phone"
+            label="Phone Number"
+            rules={[{ required: true }]}
+            type="tel"
+          >
+            <Input placeholder="Phone Number" />
+          </Form.Item>
           <Form.Item name="email" label="Email" rules={[{ required: true }]}>
             <Input placeholder="Email" type="email" />
           </Form.Item>

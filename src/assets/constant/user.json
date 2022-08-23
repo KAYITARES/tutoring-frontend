@@ -1,6 +1,6 @@
 [
   {
-    "firstName": "KAYITARE",
+    "firstName": "Kayitare",
     "lastName": "Cynthia",
     "phone": "+250785627690",
     "address": "kigali",
@@ -9,8 +9,26 @@
     "email": "kacynthian@gmail.com"
   },
   {
-    "firstName": "MUTUYIMANA",
-    "lastName": "ALICE",
+    "firstName": "Mutuyimana",
+    "lastName": "Alice",
+    "phone": "+250785627690",
+    "address": "kigali",
+    "gender": "female",
+    "role": "tutor",
+    "email": "amutuyimana1@gmail.com"
+  },
+  {
+    "firstName": "Uwase",
+    "lastName": "Liliane",
+    "phone": "+250785627690",
+    "address": "kigali",
+    "gender": "female",
+    "role": "user",
+    "email": "kacynthian@gmail.com"
+  },
+  {
+    "firstName": "Kayitare",
+    "lastName": "Cynthia",
     "phone": "+250785627690",
     "address": "kigali",
     "gender": "female",
@@ -18,12 +36,48 @@
     "email": "kacynthian@gmail.com"
   },
   {
-    "firstName": "UWASE",
-    "lastName": "LILIANE",
+    "firstName": "Mutuyimana",
+    "lastName": "Alice",
+    "phone": "+250785627690",
+    "address": "kigali",
+    "gender": "female",
+    "role": "tutor",
+    "email": "amutuyimana1@gmail.com"
+  },
+  {
+    "firstName": "Uwase",
+    "lastName": "Liliane",
+    "phone": "+250785627690",
+    "address": "kigali",
+    "gender": "female",
+    "role": "user",
+    "email": "kacynthian@gmail.com"
+  },
+  {
+    "firstName": "Kayitare",
+    "lastName": "Cynthia",
     "phone": "+250785627690",
     "address": "kigali",
     "gender": "female",
     "role": "admin",
+    "email": "kacynthian@gmail.com"
+  },
+  {
+    "firstName": "Mutuyimana",
+    "lastName": "Alice",
+    "phone": "+250785627690",
+    "address": "kigali",
+    "gender": "female",
+    "role": "tutor",
+    "email": "amutuyimana1@gmail.com"
+  },
+  {
+    "firstName": "Uwase",
+    "lastName": "Liliane",
+    "phone": "+250785627690",
+    "address": "kigali",
+    "gender": "female",
+    "role": "user",
     "email": "kacynthian@gmail.com"
   }
 ]
