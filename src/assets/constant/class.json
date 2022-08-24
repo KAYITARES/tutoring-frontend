@@ -13,9 +13,9 @@
     },
     "course": [
       {
-        "courseName": "JavaScript",
-        "courseImage": "https://images.pexels.com/photos/3466163/pexels-photo-3466163.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "courseTitle": "Foundation Javascript",
+        "courseName": "HTML",
+        "courseImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWdYZ8nWw0jCLtFH1a5Snqz9SOeGwcxINkbQ&usqp=CAU",
+        "courseTitle": "HTML Course",
         "duration": "1 hours",
         "content": "bcdiuociw cuiwciuwbciuw wui uiw iuw wiub  iuwbiuwbvuidwb",
         "coursestatus": "Enable",
