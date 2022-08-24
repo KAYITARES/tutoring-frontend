@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./class.css";
 import "../component/class.css";
 import Classes from "../assets/constant/class.json";
@@ -7,8 +7,12 @@ import Nav from "../component/nav";
 import "../component/class.css";
 import Image from "rc-image";
 import "./course.css";
+import SingleCourse from "./singleCourse";
+import { Modal } from "antd";
 
 const Class = ({ data }) => {
+  const [modalVisible, setModalVisible] = useState(false);
+  const [singleData, setSingleData] = useState({});
   return (
     <>
       <Nav />
@@ -40,10 +44,10 @@ const Class = ({ data }) => {
                 <a
                   href="#"
                   className="course-btn"
-                  // onClick={() => {
-                  //   setSingleData(tour);
-                  //   setModalVisible(true);
-                  // }}
+                  onClick={() => {
+                    setSingleData(course);
+                    setModalVisible(true);
+                  }}
                 >
                   Start
                 </a>
@@ -51,6 +55,17 @@ const Class = ({ data }) => {
             </div>
           ))}
         </div>
+        <Modal
+          width={1000}
+          centered
+          visible={modalVisible}
+          onOk={() => setModalVisible(false)}
+          onCancel={() => setModalVisible(false)}
+          footer={null}
+        >
+          <SingleCourse data={singleData} />
+          {/* data={singleData} */}
+        </Modal>
       </div>
     </>
   );

@@ -42,6 +42,7 @@ const Class = () => {
       </div>
       <Drawer
         width="100%"
+        placement="left"
         visible={show}
         onClose={() => {
           setShow(false);
