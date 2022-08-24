@@ -29,6 +29,7 @@ body {
 }
 li a {
   color: #1890ff;
+  font-weight: 900;
   /* font-size: 18px; */
 }
 
@@ -79,15 +80,14 @@ li a {
 .nav-link:visited {
   text-decoration: none;
   font-size: 1.6rem;
-  font-weight: 500;
-  color: #1890ff;
+  font-weight: 900;
+  color: transparent;
+  background-image: linear-gradient(to right, yellow, blue);
+  -webkit-background-clip: text;
 
   transition: all 0.3s;
 }
-.nav-link:hover,
-.nav-link:active {
-  color: #9ecffe;
-}
+
 .login-form {
   max-width: 300px;
 }

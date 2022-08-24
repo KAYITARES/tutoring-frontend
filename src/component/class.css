@@ -44,13 +44,14 @@
   box-shadow: 0px 0px 3px rgb(166, 164, 164);
   background: #fff;
   overflow: hidden;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .class-card:hover {
   box-shadow: 3px 3px 4px rgb(166, 164, 164);
   /* background: blue; */
   color: white;
   cursor: pointer;
+  transform: translate(5px, -5px);
   /* overflow: hidden; */
 }
 .imgz {
