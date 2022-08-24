@@ -3,7 +3,7 @@ import "./class.css";
 import Classes from "../assets/constant/class.json";
 import { Link } from "react-router-dom";
 import Course from "../views/course";
-import { Modal } from "antd";
+import { Modal, Drawer } from "antd";
 
 const Class = () => {
   const [show, setShow] = useState(false);
@@ -40,18 +40,15 @@ const Class = () => {
           </Link>
         ))}
       </div>
-      <Modal
+      <Drawer
         width="100%"
-        onOk={() => setShow(false)}
-        onCancel={() => setShow(false)}
         visible={show}
         onClose={() => {
           setShow(false);
         }}
-        footer={null}
       >
         <Course data={singleData} />
-      </Modal>
+      </Drawer>
     </div>
   );
 };

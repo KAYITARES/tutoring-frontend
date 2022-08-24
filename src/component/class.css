@@ -73,6 +73,14 @@
   /* clip-path: polygon(0 0, 100% 0, 100% 35%, 0 69%); */
   object-fit: cover;
 }
+.course-imges {
+  width: 100%;
+  height: 274px;
+
+  /* display: inline-block; */
+  /* clip-path: polygon(0 0, 100% 0, 100% 35%, 0 69%); */
+  object-fit: cover;
+}
 .class-icon {
   /* width: 100px; */
   position: absolute;
