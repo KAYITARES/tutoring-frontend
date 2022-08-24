@@ -51,7 +51,6 @@ const Class = () => {
           setShow(false);
         }}
       >
-        <Nav />
         <Course data={singleData} />
       </Drawer>
     </div>
