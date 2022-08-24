@@ -16,7 +16,7 @@ const Class = ({ data }) => {
   return (
     <>
       <div className="class-container">
-      
+        <Nav />
         <h1 className="class-heading">Courses</h1>
         <h3 className="class-subheading">Courses Belong to this Class</h3>
         <div className="classe">
