@@ -110,3 +110,6 @@
   font-size: 16px;
   font-weight: 500;
 }
+.ant-drawer-header {
+  z-index: 9999 !important;
+}

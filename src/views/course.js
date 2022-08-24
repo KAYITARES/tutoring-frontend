@@ -8,15 +8,15 @@ import "../component/class.css";
 import Image from "rc-image";
 import "./course.css";
 import SingleCourse from "./singleCourse";
-import { Modal } from "antd";
+import { Drawer } from "antd";
 
 const Class = ({ data }) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [singleData, setSingleData] = useState({});
   return (
     <>
-      <Nav />
-      <div className="class-container" id="class">
+      <div className="class-container">
+      
         <h1 className="class-heading">Courses</h1>
         <h3 className="class-subheading">Courses Belong to this Class</h3>
         <div className="classe">
@@ -55,17 +55,14 @@ const Class = ({ data }) => {
             </div>
           ))}
         </div>
-        <Modal
-          width={1000}
-          centered
+        <Drawer
+          width="100%"
           visible={modalVisible}
-          onOk={() => setModalVisible(false)}
-          onCancel={() => setModalVisible(false)}
-          footer={null}
+          onClose={() => setModalVisible(false)}
         >
           <SingleCourse data={singleData} />
           {/* data={singleData} */}
-        </Modal>
+        </Drawer>
       </div>
     </>
   );

@@ -4,6 +4,7 @@ import Classes from "../assets/constant/class.json";
 import { Link } from "react-router-dom";
 import Course from "../views/course";
 import { Modal, Drawer } from "antd";
+import Nav from "./nav";
 
 const Class = () => {
   const [show, setShow] = useState(false);
@@ -41,6 +42,8 @@ const Class = () => {
         ))}
       </div>
       <Drawer
+        // style={{ zIndex: "2" }}
+        // title={<Nav />}
         width="100%"
         placement="left"
         visible={show}
@@ -48,6 +51,7 @@ const Class = () => {
           setShow(false);
         }}
       >
+        <Nav />
         <Course data={singleData} />
       </Drawer>
     </div>
