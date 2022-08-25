@@ -54,6 +54,12 @@ li a {
     width: 80px;
     /* object-fit: cover; */
   }
+  .nav {
+    padding: 2rem 1rem;
+  }
+  .nav-links {
+    gap: 2rem;
+  }
 }
 .logo {
   background: green;

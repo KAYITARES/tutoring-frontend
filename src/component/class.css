@@ -30,8 +30,8 @@
 }
 @media (max-width: 768px) {
   .classe {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
   }
   .class-container {
